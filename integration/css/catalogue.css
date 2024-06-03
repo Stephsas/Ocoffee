@@ -1,5 +1,5 @@
 .container {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 
 .header {
@@ -151,7 +151,7 @@ input:checked ~ nav > ul > li {
     padding: 2.5rem 2rem 1rem;
     text-shadow: #111 1px 1px 1px;
     text-align: center;
-    margin: 10rem;
+    margin: 8rem;
   }
   .catalogue_title {
     font-family: SpaceGrotesk-Light;
@@ -159,7 +159,7 @@ input:checked ~ nav > ul > li {
     line-height: 1.2;
     font-weight: 500;
     font-size: 64px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
 /*section */
@@ -167,13 +167,13 @@ input:checked ~ nav > ul > li {
 .news__article {
   display: flex;
 
-  margin-top: 6rem;
+ margin: 2rem;
 }
 
 .article {
   border: solid 0.5px #c45824;
   margin-right: 2rem;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 p {
@@ -231,4 +231,40 @@ p {
   .button-56:hover {
     outline: 0;
   }
+    
+
+  .button-89 {
+    --b: 3px;   
+    --s: .45em; 
+    --color: white;
+    margin: 4rem;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#c45824 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #c45824;
+    outline-offset: .6em;
+    font-size: 16px;
   
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
