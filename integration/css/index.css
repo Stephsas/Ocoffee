@@ -237,15 +237,21 @@ input:checked ~ nav > ul > li {
 
   display: flex;
   flex-wrap: wrap;
+ margin-top: 6rem;
 }
 
 .article {
 
   border: solid 0.5px #c45824;
   margin-right: 2rem;
-  padding: 1rem;
+  padding: 5rem;
 }
 
+p {
+
+  margin-bottom: 2rem;
+
+}
 
   /* responsive */
 
