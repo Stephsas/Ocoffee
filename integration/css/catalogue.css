@@ -105,6 +105,7 @@ input ~ nav {
 }
 
 input ~ nav > ul {
+    list-style: none;
   text-align: center;
   position: absolute;
   top: 35%;
