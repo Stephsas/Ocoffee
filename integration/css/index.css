@@ -1,3 +1,5 @@
+
+
 .container {
   background-color: aliceblue;
 }
@@ -143,9 +145,114 @@ input:checked ~ nav > ul > li {
 }
 
 
-.presentation__title {
+/* main*/
+
+.title {
   color: black;
   font-weight: 700;
   font-size: x-large;
+  text-align:left
  }
+
+.presentation {
+
+  display: flex;
+  text-align:center;
+  padding: 1.2rem 1.8rem 1.2rem 6.6rem;
+  
+}
+
+.presentation_text {
+
+  margin-bottom: 15rem;
+}
+
+
+
+.image__coffee {
+
+  width: 30em;
+  margin-left: 5rem;
+  
+}
+
+ 
+  
+  .button-56 {
+    align-items: center;
+    background-color: #c45824;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #c45824;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+/*section */
+
+.news__article {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+
+  border: solid 0.5px #c45824;
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+
+  /* responsive */
+
+
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
 
