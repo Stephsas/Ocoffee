@@ -1,5 +1,6 @@
 .container {
     background-color: #f0f8ff;
+    text-align: center;
     
   }
   /* header */
@@ -140,12 +141,31 @@
     transition-delay: 0.5s;
   }
 
+  /* main */
+
+  .illustration {
+    border-radius: 0.7rem;
+    object-fit: cover;
+    width: 68%;
+    max-width: 760px;
+
+  }
+   main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
 /*section */
 
 .news__article {
-    display: flex;
-  
+      
    margin: 2rem;
+   
+  }
+
+  ul {
+ list-style: none;
+
   }
   
   .article {
