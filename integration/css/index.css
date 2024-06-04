@@ -30,7 +30,7 @@
 
 
 .logo {
-  background-image: url(../../docs/demande-client/00.assets/logo.svg);
+  background-image: url(/visuals/logo.svg);
   background-repeat: no-repeat;
   background-size: 5rem;
   background-position-y: 0.25rem;
@@ -123,6 +123,7 @@ input ~ nav > ul {
   top: 35%;
   left: 20%;
   right: 20%;
+  display: none;
 }
 
 input ~ nav > ul > li {
@@ -144,6 +145,7 @@ input ~ nav > ul > li > a {
 input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
+  display: block;
 }
 
 input:checked ~ nav > ul > li {

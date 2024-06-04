@@ -1,0 +1,313 @@
+:root {
+
+  --color-dark: #3E1E04;
+  --color-teracota: #c45824;
+
+}
+
+
+/*header*/
+
+
+.container {
+  background-color: aliceblue;
+  
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: aliceblue;
+  z-index: 10;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+
+.logo {
+  background-image: url(/visuals/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  background-position-y: 0.25rem;
+  padding-left: 3.2rem;
+}
+
+.logo__title {
+  position: fixed;
+  top: 40px;
+  left: 70px;
+  z-index: 6;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-decoration: solid;
+}
+
+span {
+  text-transform: none;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+label {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  height: 20px;
+  width: 25px;
+  z-index: 5;
+}
+
+input + label span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  display: block;
+  background: black;
+  transition: 0.5s;
+}
+
+input + label span:first-child {
+  top: 3px;
+}
+
+input + label span:last-child {
+  top: 16px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input:checked + label span {
+  opacity: 0;
+  top: 50%;
+}
+
+input:checked + label span:first-child {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+
+input:checked + label span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg);
+}
+
+input ~ nav {
+  background: #c45824;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  overflow: hidden;
+}
+
+input ~ nav > ul {
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  right: 20%;
+  
+}
+
+input ~ nav > ul > li {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+input ~ nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  padding: 30px;
+}
+
+input:checked ~ nav {
+  height: 100%;
+  transition-delay: 0s;
+  display: block;
+}
+
+input:checked ~ nav > ul > li {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+
+
+/* main */
+
+.main {
+
+  padding:124px
+
+}
+
+.title {
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  text-align: left;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.presentation p {
+  line-height: 1.5rem;
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.image__coffee {
+  border-radius: 0.7rem;
+    object-fit: cover;
+    width: 70%;
+    max-width: 650px;
+}
+
+
+
+.button-56 {
+  align-items: center;
+  background-color: #c45824;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #c45824;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+/*section */
+
+.news__article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.article {
+  border: solid 0.5px #c45824;
+  margin-right: 2rem;
+  padding: 5rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: right;
+}
+
+/* responsive */
+
+@media (max-width: 1170px) {
+  .news__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .article {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+  .logo__title {
+    position: fixed;
+    top: 33px;
+    left: 312px;
+    z-index: 6;
+    font-size: 39px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-decoration: solid;
+  }
+
+  .news {
+
+    text-align: center;
+
+  }
+ 
+}
+
+@media screen and (max-width: 320px) {
+}
