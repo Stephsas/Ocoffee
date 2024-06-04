@@ -1,7 +1,8 @@
 .container {
   background-color: #f0f8ff;
+  text-align: center;
 }
-
+/* header */
 .header {
   position: fixed;
   top: 0;
@@ -268,4 +269,8 @@ p {
   .button-89:active {
     background: var(--color);
     color: #fff;
+  }
+
+  footer {
+    text-align: right;
   }

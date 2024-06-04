@@ -1,7 +1,17 @@
+:root {
+
+  --color-dark: #3E1E04;
+  --color-teracota: #c45824;
+
+}
+
+
 /*header*/
+
 
 .container {
   background-color: aliceblue;
+  
 }
 
 .header {
@@ -156,18 +166,26 @@ input:checked ~ nav > ul > li {
 
 .presentation {
   display: flex;
-  text-align: center;
-  padding: 1.2rem 1.8rem 1.2rem 6.6rem;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
-.presentation_text {
-  margin-bottom: 15rem;
+.presentation p {
+  line-height: 1.5rem;
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: justify;
 }
 
 .image__coffee {
-  width: 30em;
-  margin-left: 5rem;
+  border-radius: 0.7rem;
+    object-fit: cover;
+    width: 70%;
+    max-width: 650px;
 }
+
+
 
 .button-56 {
   align-items: center;
@@ -237,6 +255,10 @@ input:checked ~ nav > ul > li {
 
 p {
   margin-bottom: 2rem;
+}
+
+footer {
+  text-align: right;
 }
 
 /* responsive */
