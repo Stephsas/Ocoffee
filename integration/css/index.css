@@ -153,6 +153,12 @@ input:checked ~ nav > ul > li {
 
 /* main */
 
+.main {
+
+  padding:124px
+
+}
+
 .title {
   color: black;
   font-weight: 700;
