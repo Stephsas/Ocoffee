@@ -26,7 +26,7 @@
     <% cafes.forEach(element => { %>
       
         <article class="article"> 
-      <img src="visuals/coffees/<%= element.reference %>.png" alt="">
+      <img class="img_article"  src="visuals/coffees/<%= element.reference %>.png" alt="">
       <h3> <%= element.nom  %> </h3>
     <p> <%= element.description%></p> 
     <a href="/article/<%= element.id %>">
@@ -35,7 +35,7 @@
   </article> 
 
 <%}); %>
-
+</section>
     <%- include('partials/footer') %>
 
 

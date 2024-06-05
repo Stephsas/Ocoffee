@@ -168,8 +168,8 @@ input:checked ~ nav > ul > li {
 
 .news__article {
   display: flex;
-
  margin: 2rem;
+ 
 }
 
 .article {
