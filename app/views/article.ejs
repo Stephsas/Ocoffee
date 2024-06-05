@@ -12,17 +12,21 @@
 
     <section class="news__article">
         <article class="article"> 
-            <h3>Vietnamese Robusta</h3>
-            <p>Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.</p>
-            <ul>
-<li>Origine : Vietnam</li>
-<li>Prix au kilo : 16.75 €</li>
-<li>Caractéristique principale : Épicé</li>
+                 
+                <article class="article"> 
+              <img src="#" alt="espresso coffee">
+              <h3> <%= cafe.nom  %> </h3>
+            <p> <%= cafe.description%></p>
+            <p> <%= cafe.origine%></p>
+            <p> <%= cafe.prix_kilo%></p>
+            <p> <%= cafe.caracteristique_principale%></p>
+            <p> <%= cafe.disponible%></p>
 
-            </ul>
-            <button class="button-56" role="button">Découvrir</button>
-        </article>
-       
-           </section>
+            <a href="/article/<%= cafe.id %>">
+              <button class="button-56" role="button">Découvrir</button>
+          </a>
+          </article> 
+        
+        
            
            <%- include('partials/footer') %>
