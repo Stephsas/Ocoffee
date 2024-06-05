@@ -1,6 +1,7 @@
 // mes viarables d environnement
-
+const dotenv = require('dotenv');
 const express = require('express');
+dotenv.config();
 const router = require('./app/router');
 
 
