@@ -1,24 +1,22 @@
 <%- include('partials/header') %>
 
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/catalogue.css">
-    <main class="catalogue">
-        <p class="catalogue_title">Notre catalogue </p>
-    </main>
+<link rel="stylesheet" href="/css/reset.css" />
+<link rel="stylesheet" href="/css/catalogue.css" />
+<main class="catalogue">
+  <p class="catalogue_title">Notre catalogue</p>
+</main>
 
-    <section class="news__article">
-        <article class="article"> 
-            <% cafes.forEach(element => { %>
-      
-                <article class="article"> 
-              <img src="#" alt="espresso coffee">
-              <h3> <%= element.nom  %> </h3>
-            <p> <%= element.description%></p> 
-            <a href="/article/<%= element.id %>">
-              <button class="button-56" role="button">Découvrir</button>
-          </a>
-          </article> 
-        
-        <%}); %>
-           
-           <%- include('partials/footer') %>
+<section class="news__article">
+  <% cafes.forEach(element => { %>
+
+  <article class="article">
+    <img src="visuals/coffees/<%= element.reference %>.png" alt="">
+    <h3><%= element.nom %></h3>
+    <p><%= element.description%></p>
+    <a href="/article/<%= element.id %>">
+      <button class="button-56" role="button">Découvrir</button>
+    </a>
+  </article>
+
+  <%}); %> <%- include('partials/footer') %>
+</section>
