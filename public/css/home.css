@@ -117,21 +117,21 @@ input ~ nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Utilisation de flexbox pour les éléments de la liste */
-  justify-content: center; /* Centrer les éléments de la liste */
-  align-items: center; /* Aligner les éléments verticalement */
-  height: 100%; /* Assurer que la hauteur du conteneur prend toute la hauteur de la navigation */
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  height: 100%; 
 }
 
 input ~ nav > ul > li {
-  margin-right: 20px; /* Espacement entre les éléments */
+  margin-right: 20px; 
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
 
 input ~ nav > ul > li:last-child {
-  margin-right: 0; /* Supprimer l'espacement après le dernier élément */
+  margin-right: 0; 
 }
 
 input ~ nav > ul > li > a {
