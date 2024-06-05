@@ -19,7 +19,7 @@
 
 
 .logo {
-  background-image: url(visuals/logo.svg);
+  background-image: url(/visuals/logo.svg);
   background-repeat: no-repeat;
   background-size: 5rem;
   background-position-y: 0.25rem;
@@ -145,7 +145,7 @@ input:checked ~ nav > ul > li {
 .catalogue {
     margin-top: 150px;
     padding: 150px;
-    background-image: url(/coffees/100955890.png);
+    background-image: url(/visuals/coffees/100955890.png);
     background-repeat: no-repeat;
   
     color: #fff;

@@ -145,8 +145,7 @@ input ~ nav > ul > li > a {
 input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
-  display: block;
-}
+  }
 
 input:checked ~ nav > ul > li {
   opacity: 1;

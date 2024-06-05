@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocoffee</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/index.css">
+ 
 </head>
 <body class="container">
     <header>
@@ -13,14 +12,18 @@
         
         <input id="burger" type="checkbox" />
         <label for="burger">
-           
+            <ul class="menu">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/catalogue">Catalogue</a></li>
+                <li><a href="/article/:id">Boutique</a></li>
+            </ul>  
         </label>
         <nav class="logo">    
              
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">Boutique</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/catalogue">Catalogue</a></li>
+                <li><a href="/article/:id">Boutique</a></li>
             </ul>  
         </nav>
     </header>
