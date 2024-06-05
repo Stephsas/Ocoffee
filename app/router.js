@@ -8,7 +8,7 @@ const router = Router();
 
 // Ses routes appeleront les fonctions de nos controllers
 router.get('/', mainController.homePage);
-router.get('/catalogue', mainController.cataloguePage);
+//router.get('/catalogue', mainController.cataloguePage);
 router.get('/article/:id', mainController.articlePage);
 
 // une route pour afficher la page erreur
