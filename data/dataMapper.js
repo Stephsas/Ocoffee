@@ -4,7 +4,7 @@ const dataMapper = {
 
     async get3Coffee () {
         const query = {
-          text: 'SELECT * FROM cafes LIMIT 3',
+          text: 'SELECT * FROM cafes ORDER BY id DESC LIMIT 3',
         };
         const results = await database.query(query);
         return results.rows;
