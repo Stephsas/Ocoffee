@@ -6,7 +6,7 @@
     <main class="main">
      
         <div class="presentation">
-          <div>
+          <div class="presentation__text">
           <h2 class="title">Notre Histoire</h2>
              <p>Jean et Jacques Pepper, deux frères passionnés par l'univers du café, ont toujours rêvé de créer leur propre boutique de café haut de gamme. L'occasion de concrétiser ce rêve est arrivée lors d'un voyage inoubliable en Colombie, un pays célèbre pour ses plantations de café renommées dans le monde entier.
             </p>
@@ -27,12 +27,14 @@
       
         <article class="article"> 
       <img class="img_article"  src="visuals/coffees/<%= element.reference %>.png" alt="">
+      <div class="article_description">
       <h3> <%= element.nom  %> </h3>
     <p> <%= element.description%></p> 
     <a href="/article/<%= element.id %>">
       <button class="button-56" role="button">Découvrir</button>
   </a>
   </article> 
+</div>
 
 <%}); %>
 </section>
