@@ -349,5 +349,9 @@ margin: 0;
       flex-wrap: wrap
   }
 
+.article {
 
+padding: 25px;
+
+}
 };
