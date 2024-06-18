@@ -41,9 +41,18 @@ const mainController = {
           res.status(500).send('ERREUR PAS DE CAFE');
         }
       },
+
+      introductionPage(req, res) {
+       
+          // je passe les cafés à ma vue
+          res.render('introduction');
+        
+        
+                 }
+      };
        
   
-  };
+
   
   // On exporte l'objet `mainController` qui contient les méthodes de rendu de mes views
   // On exporte le contenu de l'objet, pas le nom de la variable
