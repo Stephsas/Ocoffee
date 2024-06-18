@@ -1,45 +1,48 @@
 <%- include('partials/header') %>
 
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/home.css">
 
-    <main class="main">
-     
-        <div class="presentation">
-          <div class="presentation__text">
-          <h2 class="title">Notre Histoire</h2>
-             <p>Jean et Jacques Pepper, deux frères passionnés par l'univers du café, ont toujours rêvé de créer leur propre boutique de café haut de gamme. L'occasion de concrétiser ce rêve est arrivée lors d'un voyage inoubliable en Colombie, un pays célèbre pour ses plantations de café renommées dans le monde entier.
-            </p>
-            <a href="/catalogue">
-              <button class="button-56" role="button">Notre catalogue</button>
-          </a>
-          </div>
-             <div class="presentation__image"> <img class="image__coffee" src="/visuals/about.jpg" alt="picture of coffee"></div>  
-                  </div>
-                  
-    </main>
-    <div class="news"></div>
-    <h2 class="title">
-      Nouveautés
-    </h2>
+  <main class="main">
+
+    <div class="presentation">
+      <div class="presentation__text">
+        <h2 class="title">2 MILLIARDS ?
+          C'est le nombre de tasses de café bues chaque jour, dans le monde
+          </h2>
+        <p>Qu'il soit en grain ou en capsule, le café vous accompagne tout au long de la journée. Bien le choisir est donc primordial ! De la couleur de torréfaction aux notes aromatiques, en passant par l'intensité, la botanique, ou encore l'origine, chez MaxiCoffee, nous vous guidons pour permettre à chacun de trouver le café qui lui ressemble.
+        </p>
+        <a href="/catalogue">
+          <button class="button-56" role="button">Notre catalogue</button>
+        </a>
+      </div>
+      <div class="presentation__image"> <img class="image__coffee" src="/visuals/about.jpg" alt="picture of coffee">
+      </div>
+    </div>
+
+  </main>
+  <div class="news"></div>
+  <h2 class="title">
+    Nouveautés
+  </h2>
   <section class="news__article">
-    <% cafes.forEach(element => { %>
-      
-        <article class="article"> 
-      <img class="img_article"  src="visuals/coffees/<%= element.reference %>.png" alt="">
-      <div class="article_description">
-      <h3> <%= element.nom  %> </h3>
-    <p> <%= element.description%></p> 
-    <a href="/article/<%= element.id %>">
-      <button class="button-56" role="button">Découvrir</button>
-  </a>
-  </article> 
-</div>
+    <% cafes.forEach(element=> { %>
 
-<%}); %>
-</section>
-    <%- include('partials/footer') %>
+      <article class="article">
+        <img class="img_article" src="visuals/coffees/<%= element.reference %>.png" alt="">
+        <div class="article_description">
+          <h3>
+            <%= element.nom %>
+          </h3>
+          <p>
+            <%= element.description%>
+          </p>
+          <a href="/article/<%= element.id %>">
+            <button class="button-56" role="button">Découvrir</button>
+          </a>
+      </article>
+      </div>
 
-
-
-
+      <%}); %>
+  </section>
+  <%- include('partials/footer') %>
