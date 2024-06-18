@@ -1,6 +1,6 @@
 .container {
     background-color: #f0f8ff;
-    text-align: center;
+    
   }
   /* header */
   
@@ -90,6 +90,14 @@
   
   
   /* main */
+
+  .main {
+ 
+    margin-top: 150px;
+
+
+
+  }
   
   .catalogue {
       margin-top: 150px;
@@ -104,15 +112,35 @@
       text-align: center;
       margin: 8rem;
     }
-    .catalogue_title {
+    .title {
       font-family: SpaceGrotesk-Light;
-      color: #fff;
+      color: #c45824;
       line-height: 1.2;
       font-weight: 500;
       font-size: 64px;
       margin-bottom: 20px;
     }
-  
+
+    .title_introduction {
+
+        font-family: SpaceGrotesk-Light;
+        color: #c45824;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 64px;
+        margin-bottom: 20px;
+
+
+    }
+
+    .image__coffee {
+        border-radius: 0.7rem;
+        object-fit: cover;
+        width: 108%;
+        max-width: 650px;
+      }
+
+ 
   /*section */
   
   .news__article {
